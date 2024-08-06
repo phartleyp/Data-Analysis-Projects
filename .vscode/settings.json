@@ -1,0 +1,22 @@
+{
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "always"
+        }
+    },
+    "editor.rulers": [
+        88,
+        100
+    ],
+    "isort.args": [
+        "--profile",
+        "black"
+    ],
+    "files.trimTrailingWhitespace": true,
+    "python.analysis.typeCheckingMode": "basic",
+    "pylint.args": [
+        "--disable=line-too-long"
+    ]
+}
