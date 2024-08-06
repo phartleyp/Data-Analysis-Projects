@@ -58,7 +58,7 @@ print(summary_stats)
 sales_by_genre = ds.groupby('Genre')['Global_Sales'].sum().reset_index()
 sales_by_genre = sales_by_genre.sort_values(by='Global_Sales', ascending=False)
 mplt.figure(figsize=(10, 8))
-mplt.pie(sales_by_genre['Global_Sales'], labels=sales_by_genre['Genre'], autopct='%1.1f%%', startangle=140)
+mplt.pie(sales_by_genre['Global_Sales'], autopct='%1.1f%%', startangle=140)
 mplt.title('Total Global Sales by Genre')
 mplt.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 mplt.show()
